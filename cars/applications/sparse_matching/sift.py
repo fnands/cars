@@ -640,7 +640,7 @@ class Sift(SparseMatching, short_name="sift"):
         # TODO: we could also make it a warning and continue
         # with uncorrected grid
         # and default disparity range
-        if nb_matches < 100:
+        if nb_matches < 5:
             logging.error(
                 "Insufficient amount of matches found (< 100), can not safely "
                 "estimate epipolar error correction and disparity range"
